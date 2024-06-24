@@ -1,11 +1,12 @@
 
 body {
-    color: #111111;
-    background-image: url(/src/allpages/auth/authimages/s113.jpg);
-    background-position: center; /* add this line */
-    background-size: cover; /* optional, to cover the entire background */
+  color: #111111;
+  background-image: url('src/pages/auth/authimages/1349415.jpeg');
+  /* background-image: url(/src/allpages/auth/authimages/s113.jpg); */
+  background-position: center;
+  background-size: cover;
+}
 
-  }
 .wrapper {
   margin: 0 auto;
   width: 100%;
@@ -22,7 +23,6 @@ body {
   height: auto;
   display: flex;
   background-color: rgba(255, 249, 249, 0.4);
-  /* background-color: transparent; */
   box-shadow: 0 0 15px rgba(0, 0, 0, .1);
 }
 
@@ -42,7 +42,6 @@ body {
   font-weight: 600;
 }
 
-/* * * * * Login Form CSS * * * * */
 h2 {
   margin: 0 0 15px 0;
   font-size: 30px;
@@ -82,32 +81,47 @@ p {
 
 .col-left,
 .col-right {
-  width: 100%;
+  width: 50%;
   padding: 45px 35px;
   display: flex;
 }
 
 .col-left {
-  width: 100%;
   background-color: rgba(17, 17, 17, 0.4);
-
   -webkit-clip-path: polygon(98% 17%, 100% 34%, 98% 51%, 100% 68%, 98% 84%, 100% 100%, 0 100%, 0 0, 100% 0);
   clip-path: polygon(98% 17%, 100% 34%, 98% 51%, 100% 68%, 98% 84%, 100% 100%, 0 100%, 0 0, 100% 0);
 }
 
-@media(max-width: 575.98px) {
+@media(max-width: 767.98px) {
   .container {
     flex-direction: column;
     box-shadow: none;
   }
 
-  .col-left,
-  .col-right {
-    width: 100%;
+  .col-left {
+    width: 90%;
     margin: 0;
-    padding: 14px;
+    padding: 20px;
     -webkit-clip-path: none;
     clip-path: none;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 5px 15px;
+  }
+
+  .login-form input {
+    height: 35px;
+    font-size: 14px;
   }
 }
 
@@ -157,7 +171,7 @@ p {
 
 .login-form input {
   display: block;
-  width: 100%;
+  width: 90%;
   height: 40px;
   padding: 0 10px;
   font-size: 16px;
@@ -182,4 +196,26 @@ p {
 .login-form input.btn:hover {
   color: #2c2c2c;
   background: #ffffff;
+}
+
+@media (max-width: 575.98px) {
+  .container {
+    flex-direction: column;
+    box-shadow: none;
+  }
+
+  .col-left,
+  .col-right {
+    width: 91%;
+    margin: 0;
+    padding: 14px;
+    -webkit-clip-path: none;
+    clip-path: none;
+  }
+
+  .login-form input {
+    height: 30px;
+    font-size: 14px;
+    padding: 0 8px;
+  }
 }
